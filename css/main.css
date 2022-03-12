@@ -112,13 +112,21 @@ input[class^="btn-"]:hover {
   margin: 4rem 0;
 }
 
-.my .section-title {
+.section-title {
   font-size: 2rem;
   display: block;
   padding-bottom: 0.5rem;
   text-align: center;
   font-weight: 100;
   text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
 #main-nav {
@@ -209,4 +217,19 @@ input[class^="btn-"]:hover {
 
 #home-b div:nth-child(even) {
   background: #ccc;
+}
+
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+
+#home-c .process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  background: #ffbc00;
 }
