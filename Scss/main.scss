@@ -135,7 +135,6 @@ input[class^="btn-"]:hover {
   }
 }
 
-
 .section-title {
   font-size: 2rem;
   display: block;
@@ -207,7 +206,7 @@ input[class^="btn-"]:hover {
 
 // Home-Sections
 #home {
-    // Home Section A
+  // Home Section A
   &-a {
     .specials {
       margin-top: 3rem;
@@ -222,39 +221,37 @@ input[class^="btn-"]:hover {
     }
   }
 
-// Home Section B
+  // Home Section B
   &-b {
-      .stats {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
 
-          li {
-          line-height: 2;
-          }
-          &.stats-title {
-              font-size: 1.5rem;
-          }
-
-          &.stats-number {
-              font-size: 2rem;
-              font-weight: bold;
-          }
+      li {
+        line-height: 2;
+      }
+      &.stats-title {
+        font-size: 1.5rem;
       }
 
-      div {
-        padding: 3rem 0;  
-
-
-        &:nth-child(odd) {
-            background: $light-color;
-        }
-
-        &:nth-child(even) {
-            background: $medium-color;
-        }   
+      &.stats-number {
+        font-size: 2rem;
+        font-weight: bold;
       }
+    }
+
+    div {
+      padding: 3rem 0;
+
+      &:nth-child(odd) {
+        background: $light-color;
+      }
+
+      &:nth-child(even) {
+        background: $medium-color;
+      }
+    }
   }
-
 
   // Home Section C
   &-c {
@@ -264,33 +261,45 @@ input[class^="btn-"]:hover {
       grid-gap: 1.5rem;
       text-align: center;
 
-     &-step  {
-       position: absolute;
-       top: 0;
-       right: 0;
-       font-size: 28px;
-       background: $main-color;
-       border-radius: 50%;
-       height: 15px;
-       width: 15px; 
-       line-height: 15px;
-       padding: 1rem;
-       transition: all 1s;
-     }
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 28px;
+        background: $main-color;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s;
+      }
 
-    //  process-icon
-    &-icon {
-      border-radius: 50%;
-      background-color: $dark-color;
-      color: #fff;
-      padding: 2rem;
-      width: 70px;
-      height: 70px;
-      line-height: 70px;
-      text-align: center;
-      position: relative
-      transition: all 1s;
-    }
+      //  process-icon
+      &-icon {
+        border-radius: 50%;
+        background-color: $dark-color;
+        color: #fff;
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+          background: $main-color;
+          // width: 90px;
+          // height: 90px;
+          transform: scale(1.25);
+          line-height: 90px;
+
+          .process-step {
+            background: $dark-color;
+          }
+        }
+      }
     }
   }
 }
