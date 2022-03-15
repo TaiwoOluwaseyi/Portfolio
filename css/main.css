@@ -177,6 +177,12 @@ input[class^="btn-"]:hover {
   line-height: 1.2;
 }
 
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00;
+}
+
 #home-a .specials {
   margin-top: 3rem;
   display: grid;

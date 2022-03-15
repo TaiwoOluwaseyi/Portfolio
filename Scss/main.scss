@@ -97,6 +97,29 @@ input[class^="btn-"]:hover {
   background-color: $main-color;
 }
 
+// Backgrounds
+.bg {
+  &-main {
+    background: $main-color;
+    color: set-text-color($main-color);
+  }
+
+   &-dark {
+    background: $dark-color;
+    color: set-text-color($dark-color);
+  }
+
+   &-light {
+    background: $light-color;
+    color: set-text-color($light-color);
+  }
+
+   &-medium {
+    background: $medium-color;
+    color: set-text-color($medium-color);
+  }
+}
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -211,7 +234,13 @@ input[class^="btn-"]:hover {
       }
     }
   }
-}
+  // Header Inner 
+  &-inner {
+     background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
+  }
+
 
 // Home-Sections
 #home {
@@ -315,7 +344,29 @@ input[class^="btn-"]:hover {
   }
 }
 
+// About Section
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas: 
+      'bioimage bio bio'
+      'aw1 aw2 aw3';
+      grid-gap: 1.2rem;
+    }
 
+    // Grid areas 
+    .bio-image{
+      grid-area: bioimage;
+    }
+
+    .bio{
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+  }
+}
 // Footer
 #main-footer {
   background: $dark-color;
