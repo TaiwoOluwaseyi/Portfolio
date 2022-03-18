@@ -71,6 +71,26 @@ input[class^="btn-"]:hover {
   background-color: #ffbc00;
 }
 
+.bg-main {
+  background: #ffbc00;
+  color: #fff;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000;
+}
+
+.bg-medium {
+  background: #ccc;
+  color: #000;
+}
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -183,56 +203,56 @@ input[class^="btn-"]:hover {
   border-bottom: 3px solid #ffbc00;
 }
 
-#home-a .specials {
+#header #home-a .specials {
   margin-top: 3rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
-#home-a .specials .fas {
+#header #home-a .specials .fas {
   color: #ffbc00;
   padding-bottom: 0.4rem;
 }
 
-#home-b .stats {
+#header #home-b .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-#home-b .stats li {
+#header #home-b .stats li {
   line-height: 2;
 }
 
-#home-b .stats.stats-title {
+#header #home-b .stats.stats-title {
   font-size: 1.5rem;
 }
 
-#home-b .stats.stats-number {
+#header #home-b .stats.stats-number {
   font-size: 2rem;
   font-weight: bold;
 }
 
-#home-b div {
+#header #home-b div {
   padding: 3rem 0;
 }
 
-#home-b div:nth-child(odd) {
+#header #home-b div:nth-child(odd) {
   background: #f4f4f4;
 }
 
-#home-b div:nth-child(even) {
+#header #home-b div:nth-child(even) {
   background: #ccc;
 }
 
-#home-c .process {
+#header #home-c .process {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
   text-align: center;
 }
 
-#home-c .process-step {
+#header #home-c .process-step {
   position: absolute;
   top: 0;
   right: 0;
@@ -247,7 +267,7 @@ input[class^="btn-"]:hover {
   transition: all 1s;
 }
 
-#home-c .process-icon {
+#header #home-c .process-icon {
   border-radius: 50%;
   background-color: #333;
   color: #fff;
@@ -260,15 +280,31 @@ input[class^="btn-"]:hover {
   transition: all 1s;
 }
 
-#home-c .process-icon:hover {
+#header #home-c .process-icon:hover {
   background: #ffbc00;
   transform: scale(1.25);
   line-height: 90px;
 }
 
-#home-c .process-icon:hover .process-step {
+#header #home-c .process-icon:hover .process-step {
   background: #333;
   color: #fff;
+}
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-gap: 1.2rem;
+}
+
+#about-a .bio-image {
+  grid-area: bioimage;
+}
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem;
 }
 
 #main-footer {

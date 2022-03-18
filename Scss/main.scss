@@ -343,8 +343,9 @@ input[class^="btn-"]:hover {
     }
   }
 }
+}
+// About
 
-// About Section
 #about {
   &-a {
     .about-info {
@@ -367,6 +368,8 @@ input[class^="btn-"]:hover {
     }
   }
 }
+
+
 // Footer
 #main-footer {
   background: $dark-color;
