@@ -344,8 +344,8 @@ input[class^="btn-"]:hover {
   }
 }
 }
-// About
-
+// About Section
+// About A
 #about {
   &-a {
     .about-info {
@@ -365,6 +365,56 @@ input[class^="btn-"]:hover {
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
+    }
+
+    .award-1 {
+      grid-area: aw1;
+    }
+
+    .award-2 {
+      grid-area: aw2;
+    }
+
+    .award-3 {
+      grid-area: aw3;
+    }
+
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+
+  // About B
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $main-color;
+      }
+    }
+  }
+
+  // About C
+  &-c {
+    .about-logo {
+      display: grid;
+      grid-template-columns: repeat(4 1fr);
+      grid-gap: 2rem;
+
+      img {
+        width: 70;
+      }
     }
   }
 }
