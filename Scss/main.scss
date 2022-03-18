@@ -450,6 +450,12 @@ input[class^="btn-"]:hover {
 }
 
 
+// items
+ .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ }
+
 // Footer
 #main-footer {
   background: $dark-color;
@@ -478,4 +484,5 @@ input[class^="btn-"]:hover {
        }
     }
   }
+}
 }

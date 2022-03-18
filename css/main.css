@@ -378,20 +378,25 @@ input[class^="btn-"]:hover {
   margin-right: 0.5rem;
 }
 
-#main-footer {
+#about .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#about #main-footer {
   background: #333;
   color: #fff;
   height: 5rem;
 }
 
-#main-footer .footer-content {
+#about #main-footer .footer-content {
   display: flex;
   justify-content: space-between;
   height: 5rem;
   align-items: center;
 }
 
-#main-footer .footer-content .social .fab {
+#about #main-footer .footer-content .social .fab {
   margin-right: 1rem;
   border: 2px #fff solid;
   border-radius: 50%;
@@ -402,6 +407,6 @@ input[class^="btn-"]:hover {
   padding: 0.5rem;
 }
 
-#main-footer .footer-content .social .fab:hover {
+#about #main-footer .footer-content .social .fab:hover {
   background: #ffbc00;
 }
