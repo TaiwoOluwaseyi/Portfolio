@@ -203,56 +203,56 @@ input[class^="btn-"]:hover {
   border-bottom: 3px solid #ffbc00;
 }
 
-#header #home-a .specials {
+#home-a .specials {
   margin-top: 3rem;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
-#header #home-a .specials .fas {
+#home-a .specials .fas {
   color: #ffbc00;
   padding-bottom: 0.4rem;
 }
 
-#header #home-b .stats {
+#home-b .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-#header #home-b .stats li {
+#home-b .stats li {
   line-height: 2;
 }
 
-#header #home-b .stats.stats-title {
+#home-b .stats.stats-title {
   font-size: 1.5rem;
 }
 
-#header #home-b .stats.stats-number {
+#home-b .stats.stats-number {
   font-size: 2rem;
   font-weight: bold;
 }
 
-#header #home-b div {
+#home-b div {
   padding: 3rem 0;
 }
 
-#header #home-b div:nth-child(odd) {
+#home-b div:nth-child(odd) {
   background: #f4f4f4;
 }
 
-#header #home-b div:nth-child(even) {
+#home-b div:nth-child(even) {
   background: #ccc;
 }
 
-#header #home-c .process {
+#home-c .process {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
   text-align: center;
 }
 
-#header #home-c .process-step {
+#home-c .process-step {
   position: absolute;
   top: 0;
   right: 0;
@@ -267,7 +267,7 @@ input[class^="btn-"]:hover {
   transition: all 1s;
 }
 
-#header #home-c .process-icon {
+#home-c .process-icon {
   border-radius: 50%;
   background-color: #333;
   color: #fff;
@@ -280,21 +280,20 @@ input[class^="btn-"]:hover {
   transition: all 1s;
 }
 
-#header #home-c .process-icon:hover {
+#home-c .process-icon:hover {
   background: #ffbc00;
   transform: scale(1.25);
   line-height: 90px;
 }
 
-#header #home-c .process-icon:hover .process-step {
+#home-c .process-icon:hover .process-step {
   background: #333;
   color: #fff;
 }
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio'
- 'aw1 aw2 aw3';
+  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
   grid-gap: 1.2rem;
 }
 
@@ -343,13 +342,40 @@ input[class^="btn-"]:hover {
 }
 
 #about-c .about-logo {
-  /* display: grid; */
-  grid-template-rows: repeat(4 1fr);
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
 }
 
 #about-c .about-logo img {
   width: 70;
+}
+
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+#about-d .testimonials ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#about-d .testimonials p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+#about-d .testimonials img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
 }
 
 #main-footer {
