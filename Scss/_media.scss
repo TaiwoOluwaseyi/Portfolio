@@ -41,7 +41,90 @@
   #home-b .stats,
   #home-c .process,
   #about-d .testimonials,
+  #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr;
   }
+
+ #home {
+   &-a {
+     .specials div {
+       border-bottom: 1px $light-color solid;
+       padding-bottom: 1rem;
+
+       &:last-child {
+         border: none;
+         padding-bottom: 0;
+       }
+     }
+   }
+
+   &-b {
+     .stats div {
+       padding: 2rem 0 1rem;
+     }
+   }
+ } 
+
+//  About Page
+#about {
+  &-a {
+    .about-info {
+      grid-template-areas:
+      'bioimage'
+      'bio'
+      'aw1'
+      'aw2'
+      'aw3';
+    }
+  }
+
+  &-c {
+    display: none;
+  }
+}
+
+// Contact Page
+#contact {
+  &-a {
+    .text-fields {
+      grid-template-areas: 
+      'name'
+      'email'
+      'phone'
+      'message';
+    }
+  }
+
+  &-b {
+    div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px #555 solid;
+
+      &:last-child {
+        border: none;
+        margin: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &-c {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+//  Footer
+#main-footer {
+  height: 7rem;
+
+  .footer-content {
+    flex-direction: column;
+    padding: 1rem;
+    height: 5rem;
+  }
+}
 }
