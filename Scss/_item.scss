@@ -139,7 +139,12 @@
 
     button[type='submit']{
       width: 50%;
+
+      &:hover {
+        background: $main-color;
+      }
     }
+
   }
 
   &-b {

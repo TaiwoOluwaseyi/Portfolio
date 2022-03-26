@@ -539,6 +539,10 @@ input[class^="btn-"]:hover {
   width: 50%;
 }
 
+#contact-a button[type='submit']:hover {
+  background: #ffbc00;
+}
+
 #contact-b .contact-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -604,7 +608,7 @@ input[class^="btn-"]:hover {
     display: none;
   }
   #contact-a .text-fields {
-    grid-template-areas: 'name' 'email' 'phone' 'message';
+    grid-template-areas: 'name' 'email' 'subject' 'phone' 'message';
   }
   #contact-b div {
     margin-bottom: 1rem;
